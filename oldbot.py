@@ -76,4 +76,4 @@ async def server(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run('MTA4Mzc1OTUwNDk3MTI3MjI2Mg.G81wNf.Nzk6o7y_pjO72dpXfKfESBBtxkFruwyyksfkqQ')
+bot.run('TOKEN')
