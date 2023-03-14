@@ -13,4 +13,4 @@ class MyBot(commands.Bot):
 
 bot = MyBot(command_prefix='!', intents=intents, activity=discord.Game("https://discord.gg/qE95VSpvwW"), status= discord.Status.online)
 
-bot.run('MTA4Mzc1OTUwNDk3MTI3MjI2Mg.G81wNf.Nzk6o7y_pjO72dpXfKfESBBtxkFruwyyksfkqQ')
+bot.run('TOKEN')
