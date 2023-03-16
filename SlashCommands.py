@@ -11,9 +11,7 @@ class SlashCommands(commands.Cog):
 
     @user.command(name='avatar', description='Gets the avatar of a user')
     async def _avatar(self, interaction: discord.Interaction, member: discord.Member):
-        url = member.avatar.url
-        url = url.replace('size=1024', 'size=4096')
-        await interaction.response.send_message(f'{url}')
+        await interaction.response.send_message(f'{member.avatar.with_size(4096).url}')
 
     @user.command(name='info', description='get a bunch of useless info about a user')
     async def _info(self, interaction: discord.Interaction, member: discord.Member):
